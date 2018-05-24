@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-webpack-bundle-analyzer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "vue-cli plugin to visualize size of webpack output files",
   "main": "index.js",
   "repository": "mrbbot/vue-cli-plugin-webpack-bundle-analyzer",
