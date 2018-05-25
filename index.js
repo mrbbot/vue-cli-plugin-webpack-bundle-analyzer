@@ -5,7 +5,6 @@ module.exports = (api, projectOptions) => {
 
     if(development) {
         const options = (projectOptions.pluginOptions || {}).webpackBundleAnalyzer || {};
-        console.log(options);
 
         api.chainWebpack(webpackConfig => {
             webpackConfig
