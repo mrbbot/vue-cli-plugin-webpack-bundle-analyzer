@@ -26,6 +26,10 @@ You can use any of [these](https://github.com/webpack-contrib/webpack-bundle-ana
 
 When building your Vue project for production, the `analyzerMode` will be set to `static`. By default, the generated web page will be opened in your browser. This can be changed by setting `openAnalyzer` to `false` as shown above.
 
+## Known Caveats
+
+In development, you'll only be able to use the `stat` size due to `webpack-bundle-analyzer` requiring physical files to calculate `parsed` and `gzipped` sizes.
+
 ## Installing in an Already Created Project
 
 ```sh
