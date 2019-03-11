@@ -38,9 +38,12 @@ vue add webpack-bundle-analyzer
 
 ## Injected webpack-chain Rule
 
+The following rule is **automatically** added to your Vue config behind the scenes. All you need to do to activate this plugin is run the above command in your project's directory.
+
 ```js
 config
   .plugin("webpack-bundle-analyzer")
   .use(BundleAnalyzerPlugin)
   .init(Plugin => new Plugin(options));
+
 ```
