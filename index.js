@@ -18,6 +18,12 @@ module.exports = (api, projectOptions) => {
   );
 
   api.chainWebpack(webpackConfig => {
+    if(process.env.VUE_CLI_MODERN_MODE === "true") {
+      const isModernBuild = process.env.VUE_CLI_MODERN_BUILD === "true";
+      const reportFilename = mergedOptions.reportFilename || "report.html";
+      mergedOptions.reportFilename = (isModernBuild ? "modern-" : "legacy-") + reportFilename;
+    }
+
     webpackConfig
       .plugin("webpack-bundle-analyzer")
       .use(BundleAnalyzerPlugin)
