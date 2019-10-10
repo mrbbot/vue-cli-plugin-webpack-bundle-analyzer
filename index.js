@@ -21,9 +21,9 @@ module.exports = (api, projectOptions) => {
     if(process.env.VUE_CLI_MODERN_MODE === "true") {
       const isModernBuild = process.env.VUE_CLI_MODERN_BUILD === "true";
       const normalizedReportFilename = mergedOptions.reportFilename || "report.html";
-      const pathParts = normalizedReportFilename.split( '/' );
+      const pathParts = normalizedReportFilename.split("/");
       const reportFilename = pathParts.pop();
-      const path = ( pathParts.length > 0 ? pathParts.join( '/' ) + '/' : '');
+      const path = pathParts.length > 0 ? pathParts.join("/") + "/" : "";
       mergedOptions.reportFilename = path + (isModernBuild ? "modern-" : "legacy-") + reportFilename;
     }
 
