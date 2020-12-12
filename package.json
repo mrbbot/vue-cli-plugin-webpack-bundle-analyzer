@@ -15,6 +15,6 @@
   "license": "MIT",
   "homepage": "https://github.com/mrbbot/vue-cli-plugin-webpack-bundle-analyzer#readme",
   "dependencies": {
-    "webpack-bundle-analyzer": "^3.6.0"
+    "webpack-bundle-analyzer": "^4.2.0"
   }
 }
